@@ -18,3 +18,9 @@ Is the asymptotic complexity of tail-recursive Fibonacci different from the
 non-tail-recursive version? Why, or why not, and what is the complexity
 (worst-case $\Theta$)? Add your answer, including your reasoning, to this
 markdown file.
+
+---
+
+Initially, I do think this change does reduce the workload quite a bit, just by reducing the number of recursive calls from 2 to 1. I could also see that as $n$ increases, the values for, say, `fib(1)` or `fib(3)` in the normal implementation are going to be recalculated and used a large number of times. However, `fibTR(1, 5, 8)`, for example, isn't going to get recalculated a bunch of times. The additional parameters save that calculation.
+
+Since $n$ decreases at each step, that means there will be $n$ function calls, resulting in a time complexity of $\Theta(n)$.
