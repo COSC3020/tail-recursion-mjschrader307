@@ -24,3 +24,10 @@ markdown file.
 Initially, I do think this change does reduce the workload quite a bit, just by reducing the number of recursive calls from 2 to 1. I could also see that as $n$ increases, the values for, say, `fib(1)` or `fib(3)` in the normal implementation are going to be recalculated and used a large number of times. However, `fibTR(1, 5, 8)`, for example, isn't going to get recalculated a bunch of times. The additional parameters save that calculation.
 
 Since $n$ decreases at each step, that means there will be $n$ function calls, resulting in a time complexity of $\Theta(n)$.
+
+---
+
+**I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.**
